@@ -3,8 +3,8 @@
 pushd $DOTFILES
 for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
 do
-  echo "stow $folder"
-  unlink "$HOME/$folder" 2> /dev/null
-  stow $folder
+    echo "stow $folder"
+    unlink "$HOME/$folder" 2> /dev/null
+    stow $folder
 done
 popd
