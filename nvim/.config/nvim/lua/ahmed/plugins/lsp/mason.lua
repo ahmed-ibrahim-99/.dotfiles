@@ -23,6 +23,7 @@ mason_lspconfig.setup({
 		"tailwindcss",
 		"sumneko_lua",
 		"bashls",
+		"yamlls",
 	},
 })
 
