@@ -18,6 +18,7 @@ mason.setup()
 mason_lspconfig.setup({
 	ensure_installed = {
 		"tsserver",
+		"pyright",
 		"html",
 		"cssls",
 		"tailwindcss",
@@ -32,6 +33,9 @@ mason_null_ls.setup({
 		"prettier",
 		"stylua",
 		"eslint_d",
+		"flake8",
+		"pylint",
+		"autopep8",
 		"beautysh",
 	},
 })

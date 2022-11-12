@@ -24,6 +24,13 @@ null_ls.setup({
 		formatting.prettier, -- js/ts formatter
 		formatting.stylua, -- lua formatter
 		formatting.beautysh, -- bash formatter
+		formatting.autopep8, -- python formatter
+		diagnostics.flake8, -- python linter
+		diagnostics.pylint.with({ -- python linter
+			diagnostics_postprocess = function(diagnostic)
+				diagnostic.code = diagnostic.message_id
+			end,
+		}),
 		diagnostics.eslint_d.with({ -- js/ts linter
 			-- only enable eslint if root has .eslintrc.js (not in youtube nvim video)
 			condition = function(utils)

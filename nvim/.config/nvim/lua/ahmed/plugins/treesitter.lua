@@ -14,6 +14,7 @@ treesitter.setup({
 		enable = true,
 	},
 	ensure_installed = {
+		"python",
 		"json",
 		"javascript",
 		"typescript",
