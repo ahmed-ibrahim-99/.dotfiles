@@ -8,3 +8,6 @@ do
     stow $folder
 done
 popd
+
+# executable files
+find ~/.local/scripts/ -type f -iname "*.sh" -exec chmod +x {} \;                                                                                                                ─╯

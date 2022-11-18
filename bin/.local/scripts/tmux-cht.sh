@@ -8,7 +8,7 @@ read -p "Enter Query: " query
 
 if grep -qs "$selected" ~/.tmux-cht-languages; then
     query=`echo $query | tr ' ' '+'`
-    tmux split-window -p 40 -fh bash -c "curl cht.sh/$selected/$query | less"
+    tmux split-window -p 100 -fh bash -c "curl cht.sh/$selected/$query | less"
 else
-    tmux split-window -p 40 -fh bash -c "curl cht.sh/$selected~$query | less"
+    tmux split-window -p 100 -fh bash -c "curl cht.sh/$selected~$query | less"
 fi
