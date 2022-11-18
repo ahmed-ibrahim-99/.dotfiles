@@ -25,6 +25,7 @@ mason_lspconfig.setup({
 		"sumneko_lua",
 		"bashls",
 		"yamlls",
+		"prismals",
 	},
 })
 
