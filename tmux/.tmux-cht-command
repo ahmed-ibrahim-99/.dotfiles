@@ -7,6 +7,7 @@ tr
 cp
 ls
 grep
+curl
 xargs
 rg
 ps
