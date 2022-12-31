@@ -10,4 +10,4 @@ done
 popd
 
 # executable files
-find ~/.local/scripts/ -type f -iname "*.sh" -exec chmod +x {} \;                                                                                                                ─╯
+find ~/.local/scripts/ -type f -iname "*.sh" -exec chmod +x {} \;
