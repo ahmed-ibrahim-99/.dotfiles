@@ -17,7 +17,7 @@ local keymap = vim.keymap
 
 local on_attach = function(client, bufnr)
 	if client.name ~= "null-ls" then
-		client.resolved_capabilities.document_formatting = false
+		client.server_capabilities.documentFormattingProvider = false
 	end
 	local opts = { noremap = true, silent = true, buffer = bufnr }
 
@@ -82,6 +82,11 @@ lspconfig["yamlls"].setup({
 })
 
 lspconfig["prismals"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
+lspconfig["solang"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })

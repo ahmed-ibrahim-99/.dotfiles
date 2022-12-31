@@ -9,7 +9,7 @@ local diagnostics = null_ls.builtins.diagnostics
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 local lsp_formatting = function(bufnr)
-	vim.lsp.buf.formatting({
+	vim.lsp.buf.format({
 		filter = function(client)
 			return client.name == "null-ls"
 		end,
