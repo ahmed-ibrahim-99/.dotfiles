@@ -26,6 +26,7 @@ mason_lspconfig.setup({
 		"bashls",
 		"yamlls",
 		"prismals",
+		"solidity",
 	},
 })
 
@@ -38,5 +39,6 @@ mason_null_ls.setup({
 		"pylint",
 		"autopep8",
 		"beautysh",
+		"solhint"
 	},
 })
